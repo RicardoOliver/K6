@@ -17,6 +17,7 @@ This project includes JavaScript code for running API testing with K6.
 
 Aqui está uma descrição do código fornecido:
 
+```javaScript
     import http from "k6/http";: Importa o módulo http do k6 para fazer chamadas HTTP.
 
     import { check } from "k6";: Importa a função check do k6 para realizar verificações nos resultados das chamadas HTTP.
@@ -38,8 +39,13 @@ Aqui está uma descrição do código fornecido:
     const myRate = new Rate('taxa req 200');: Cria uma taxa chamada "taxa req 200" para acompanhar a taxa de respostas com código 200.
 
     const myTrend = new Trend('Taxa de espera.');: Cria uma tendência chamada "Taxa de espera" para acompanhar a taxa de espera.
+```
 
-    export default function () {...}: Define a função principal do teste.
+    
+    
+    
+    
+export default function () {...}: Define a função principal do teste.
         Cria um payload em JSON.
         Define os parâmetros para a requisição HTTP.
         Faz uma chamada HTTP POST para "https://reqres.in/api/users".
@@ -48,7 +54,7 @@ Aqui está uma descrição do código fornecido:
         Exibe o corpo da resposta e o código de status no console.
         Realiza uma verificação no código de status da resposta.
 
-    export function handleSummary(data) {...}: Define a função de manipulação do resumo do teste.
+export function handleSummary(data) {...}: Define a função de manipulação do resumo do teste.
         Retorna um objeto com o relatório HTML e o resumo em texto.
 
 No geral, o código define um teste de carga usando o k6. Ele
